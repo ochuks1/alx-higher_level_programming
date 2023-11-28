@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+import sys
+import compileall
+import os
+
+if len(sys.argv) != 2:
+    sys.stderr.write("Usage: {} <filename.py>\n".format(sys.argv[0]))
+    sys.exit(1)
+
+filename = sys.argv[1]
+
+if not os.path.isfile(filename):
+    sys.stderr.write("{}: Error: File not found: '{}'\n".format(sys.argv[0], filename))
+    sys.exit(1)
+
+compileall.compile_file(filename, doraise=True)
+sys.stderr.write("Compiling {} ...\n".format(filename))
+sys.exit(0)
