@@ -2,7 +2,6 @@
 def square_matrix_simple(matrix=[]):
     return [[x ** 2 for x in row] for row in matrix]
 
-# Example usage:
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
