@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for number in range(99 + 1):
-    print("{} = {}".format(number, hex(number)), end="\n" if number == 99 else ", ")
+for num in range(0, 99):
+    print("{:d} = 0x{:x}".format(num, num))
