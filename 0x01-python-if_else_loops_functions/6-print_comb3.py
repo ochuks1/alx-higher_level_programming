@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-for num1 in range(10):
-    for num2 in range(num1 + 1, 10):
-        print("{:d}{:d}".format(num1, num2), end=", " if num1 != 8 or num2 != 9 else "\n")
+number = 0
+while number <= 89:
+    if number % 10 == 0:
+        number += 1 + number // 10
+    print("{:02d}".format(number), end='\n' if number == 89 else ", ")
+    number += 1
