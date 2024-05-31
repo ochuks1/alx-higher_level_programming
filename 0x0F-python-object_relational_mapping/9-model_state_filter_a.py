@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+
+"""
+This script lists all State objects that contain the letter 'a' from the database `hbtn_0e_6_usa` using SQLAlchemy.
+
+Usage: ./9-model_state_filter_a.py <mysql username> <mysql password> <database name>
+"""
+
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker

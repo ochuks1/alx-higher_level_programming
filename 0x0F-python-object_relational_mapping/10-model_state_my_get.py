@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+
+"""
+This script prints the State object with the name passed as argument from the database `hbtn_0e_6_usa` using SQLAlchemy.
+
+Usage: ./10-model_state_my_get.py <mysql username> <mysql password> <database name> <state name to search>
+"""
+
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
